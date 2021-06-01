@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ListProductVC: UIViewController {
+public class ListProductVC: UIViewController {
 
     public var viewModel:ListProductViewModel!
     public var token: String!
