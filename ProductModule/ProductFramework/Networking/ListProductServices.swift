@@ -11,7 +11,8 @@ public protocol ListProductProtocol {
     func fetchListProduct(completion: @escaping ([ProductModel]) -> Void)
 }
 public struct ListProductServices: ListProductProtocol {
-    
+    public init(){}
+
     public func fetchListProduct(completion: @escaping ([ProductModel]) -> Void) {
         let mockProduct = [ProductModel(name: "apple", cost: 1),
                             ProductModel(name: "Samsung", cost: 2.0)]
