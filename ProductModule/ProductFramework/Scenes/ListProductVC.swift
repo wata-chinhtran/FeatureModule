@@ -15,7 +15,7 @@ public class ListProductVC: UIViewController {
     public func setToken(token: String) {
         self.token = token
     }
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
