@@ -6,11 +6,16 @@
 //
 
 import UIKit
+public protocol ProductInfoDelegate: AnyObject {
+    func productCallBack(title: String)
+}
 
 public class ListProductVC: UIViewController {
 
     public var viewModel:ListProductViewModel!
     public var token: String!
+    public weak var delegate:ProductInfoDelegate!
+    
     var tbView:UITableView!
     
     public func setToken(token: String) {
@@ -49,5 +54,11 @@ extension ListProductVC: UITableViewDelegate, UITableViewDataSource {
         let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell")! as UITableViewCell
         cell.textLabel?.text = self.viewModel.listProduct[indexPath.row].name
         return cell
+    }
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let delegate = self.delegate {
+            delegate.productCallBack(title: self.viewModel.listProduct[indexPath.row].name ?? "")
+            self.dismiss(animated: true, completion: nil)
+        }
     }
 }
