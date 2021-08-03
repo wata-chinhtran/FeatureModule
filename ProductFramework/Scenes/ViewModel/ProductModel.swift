@@ -17,4 +17,5 @@ extension Encodable {
 public struct ProductModel: Codable {
     let name: String?
     let cost: Double?
+    let quantity: Int?
 }
