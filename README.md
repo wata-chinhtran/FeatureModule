@@ -55,12 +55,3 @@ Getting Started with Swift Unit Testing in Xcode
         <img src= "https://github.com/wata-chinhtran/CommonModule/blob/master/ut_select_test_case_class.png" /></br>
 2. The Initial Unit Test Class
 Read more at: https://medium.com/@enricopiovesan/unit-testing-in-swift-tutorial-92daab95246b
-
-
-
-
-
-
-
-
-
