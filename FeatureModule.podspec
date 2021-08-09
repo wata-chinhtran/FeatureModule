@@ -1,16 +1,16 @@
 Pod::Spec.new do |spec|
-  spec.name = "ProductFramework"
+  spec.name = "FeatureModule"
   spec.version = "1.0.0"
   spec.summary = "Sample framework from blog post, not for real world use.Functional JSON parsing library for Swift."
-  spec.homepage = "https://github.com/phoenixit99/ProductFramework.git"
+  spec.homepage = "https://github.com/wata-chinhtran/FeatureModule.git"
   spec.license = { :type => 'MIT', :file => 'LICENSE' }
   spec.authors = {
     "Hoang Nguyen" => 'hoanguit@gmail.com'
   }
-  spec.social_media_url = "https://github.com/phoenixit99/ProductFramework.git"
+  spec.social_media_url = "https://github.com/wata-chinhtran/FeatureModule.git"
 
-  spec.source = { :git => "https://github.com/phoenixit99/ProductFramework.git", :tag => "v#{spec.version}", :submodules => true }
-  spec.source_files  ="ProductFramework/**/*.{h,swift}"
+  spec.source = { :git => "https://github.com/wata-chinhtran/FeatureModule.git", :tag => "v#{spec.version}", :submodules => true }
+  spec.source_files  ="FeatureModule/**/*.{h,swift}"
   spec.requires_arc = true
   spec.platform     = :ios
   spec.ios.deployment_target = "10.0"
