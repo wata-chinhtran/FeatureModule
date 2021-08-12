@@ -5,7 +5,7 @@ Pod::Spec.new do |spec|
   spec.homepage = "https://github.com/wata-chinhtran/FeatureModule.git"
   spec.license = { :type => 'MIT', :file => 'LICENSE' }
   spec.authors = {
-    "Hoang Nguyen" => 'hoanguit@gmail.com'
+    "Chinh Tran" => 'chinh.tran@watasolutions.com'
   }
   spec.social_media_url = "https://github.com/wata-chinhtran/FeatureModule.git"
 
