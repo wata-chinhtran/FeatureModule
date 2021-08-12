@@ -10,10 +10,11 @@ Pod::Spec.new do |spec|
   spec.social_media_url = "https://github.com/wata-chinhtran/FeatureModule.git"
 
   spec.source = { :git => "https://github.com/wata-chinhtran/FeatureModule.git", :tag => "v#{spec.version}", :submodules => true }
-  spec.source_files  ="FeatureModule/**/*.{h,swift}"
+  spec.source_files  = "FeatureModule/**/*.{h,swift}"
   spec.requires_arc = true
   spec.platform     = :ios
   spec.ios.deployment_target = "10.0"
 
   spec.dependency "Moya"
+  spec.dependency "CommonModule"
 end
