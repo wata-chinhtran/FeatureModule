@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import ProductFramework
+import FeatureModule
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
