@@ -1,0 +1,3 @@
+[submodule "CommonModule"]
+	path = CommonModule
+	url = https://github.com/wata-chinhtran/CommonModule.git

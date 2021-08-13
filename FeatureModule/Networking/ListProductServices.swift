@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import CommonModule
 public protocol ListProductProtocol {
     func fetchListProduct(completion: @escaping ([ProductModel]) -> Void)
 }
