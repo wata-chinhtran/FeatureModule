@@ -22,7 +22,7 @@
 		4DDC9F9726C634C6002419C0 /* FeatureModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDC9F9626C634C6002419C0 /* FeatureModule.swift */; };
 		4DDC9F9E26C64259002419C0 /* ProductDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDC9F9C26C64259002419C0 /* ProductDetailVC.swift */; };
 		4DDC9F9F26C64259002419C0 /* ProductDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DDC9F9D26C64259002419C0 /* ProductDetailVC.xib */; };
-		4DDC9FA426C652C1002419C0 /* ip13.jpeg in Sources */ = {isa = PBXBuildFile; fileRef = 4DDC9FA326C64331002419C0 /* ip13.jpeg */; };
+		4DDC9FA626C65436002419C0 /* ip13.jpeg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4DDC9FA326C64331002419C0 /* ip13.jpeg */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +41,19 @@
 			remoteInfo = UseFeatureModuleSample;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4DDC9FA526C65428002419C0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				4DDC9FA626C65436002419C0 /* ip13.jpeg in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		18FA84F726669AC90047AA6E /* FeatureModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -255,6 +268,7 @@
 				18FA84F326669AC90047AA6E /* Sources */,
 				18FA84F426669AC90047AA6E /* Frameworks */,
 				18FA84F526669AC90047AA6E /* Resources */,
+				4DDC9FA526C65428002419C0 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -430,7 +444,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DDC9FA426C652C1002419C0 /* ip13.jpeg in Sources */,
 				4DDC9F9E26C64259002419C0 /* ProductDetailVC.swift in Sources */,
 				18FA850726669B350047AA6E /* ProductModel.swift in Sources */,
 				4DDC9F9726C634C6002419C0 /* FeatureModule.swift in Sources */,

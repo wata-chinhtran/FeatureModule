@@ -13,15 +13,6 @@ class ProductDetailVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Product Detail"
-        productImage.image = UIImage(named: "ip13.jpeg", in: getBundle(), compatibleWith: nil)
+//        productImage.image = UIImage(named: "ip13.jpeg", in: featureModuleBundle, compatibleWith: nil)
     }
-    
-    func getBundle() -> Bundle? {
-        var bundle: Bundle?
-        if let urlString = Bundle.main.path(forResource: "FeatureModule", ofType: "framework", inDirectory: "FeatureModule") {
-            bundle = (Bundle(url: URL(fileURLWithPath: urlString)))
-        }
-        return bundle
-    }
-    
 }
