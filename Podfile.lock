@@ -1,0 +1,29 @@
+PODS:
+  - Alamofire (5.4.3)
+  - CommonModule (1.0.0):
+    - Moya
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+
+DEPENDENCIES:
+  - CommonModule (from `./CommonModule`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Moya
+
+EXTERNAL SOURCES:
+  CommonModule:
+    :path: "./CommonModule"
+
+SPEC CHECKSUMS:
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  CommonModule: ae4028165965e94d16bdbd1221c870b385f56e61
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+
+PODFILE CHECKSUM: d83c1779a7ce564ab6e386cdc6e5a5e19f953b37
+
+COCOAPODS: 1.10.1
