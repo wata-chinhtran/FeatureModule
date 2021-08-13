@@ -22,6 +22,7 @@ public class ListProductViewModelImpl: ListProductViewModel {
         self.listProductServices = productServices
         self.tokenApp = token
     }
+    
     public func fetchListProduct(completion: @escaping ([ProductModel]) -> Void) {
         self.listProductServices.fetchListProduct { result in
             self.listProduct = result
