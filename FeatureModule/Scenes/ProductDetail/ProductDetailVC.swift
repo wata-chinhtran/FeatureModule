@@ -13,6 +13,6 @@ class ProductDetailVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Product Detail"
-//        productImage.image = UIImage(named: "ip13.jpeg", in: featureModuleBundle, compatibleWith: nil)
+        productImage.image = UIImage(named: "ip13.jpeg", in: featureModuleBundle, compatibleWith: nil)
     }
 }
