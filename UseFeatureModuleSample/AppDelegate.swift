@@ -6,14 +6,16 @@
 //
 
 import UIKit
-
+import FeatureModule
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-
+    var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        let featureModule = FeatureModule.initWith(settings: ["services": ListProductServices()], token: "test")
+        self.window?.rootViewController = featureModule
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
 
