@@ -6,13 +6,13 @@
 //
 
 import UIKit
-public protocol ProductInfoDelegate: AnyObject {
+protocol ProductInfoDelegate: AnyObject {
     func productCallBack(title: String)
 }
 
-public class ListProductVC: UIViewController {
+class ListProductVC: UIViewController {
 
-    public var viewModel:ListProductViewModel!
+    public var viewModel: ListProductViewModel!
     public var token: String!
     public weak var delegate:ProductInfoDelegate!
     
@@ -24,7 +24,7 @@ public class ListProductVC: UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        self.title = "Products"
         tbView = UITableView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: self.view.bounds.height))
         tbView.delegate = self
         tbView.dataSource = self

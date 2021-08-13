@@ -22,6 +22,7 @@
 		4D79109026C0E911003BAA9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D79108E26C0E911003BAA9F /* LaunchScreen.storyboard */; };
 		4D79109B26C0E911003BAA9F /* UseFeatureModuleSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D79109A26C0E911003BAA9F /* UseFeatureModuleSampleTests.swift */; };
 		4D7910A626C0E911003BAA9F /* UseFeatureModuleSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7910A526C0E911003BAA9F /* UseFeatureModuleSampleUITests.swift */; };
+		4DDC9F9726C634C6002419C0 /* FeatureModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDC9F9626C634C6002419C0 /* FeatureModule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		4D7910A126C0E911003BAA9F /* UseFeatureModuleSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UseFeatureModuleSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D7910A526C0E911003BAA9F /* UseFeatureModuleSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseFeatureModuleSampleUITests.swift; sourceTree = "<group>"; };
 		4D7910A726C0E911003BAA9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DDC9F9626C634C6002419C0 /* FeatureModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureModule.swift; sourceTree = "<group>"; };
 		95F7914E47BFF857FF63E7A9 /* Pods-FeatureModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeatureModule.debug.xcconfig"; path = "Target Support Files/Pods-FeatureModule/Pods-FeatureModule.debug.xcconfig"; sourceTree = "<group>"; };
 		DEA80D950BCB4DB0E1E4A3A0 /* Pods-FeatureModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeatureModule.release.xcconfig"; path = "Target Support Files/Pods-FeatureModule/Pods-FeatureModule.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,6 +135,7 @@
 				18FA850C26669CD00047AA6E /* Scenes */,
 				18FA84FA26669AC90047AA6E /* ProductFramework.h */,
 				18FA84FB26669AC90047AA6E /* Info.plist */,
+				4DDC9F9626C634C6002419C0 /* FeatureModule.swift */,
 			);
 			path = FeatureModule;
 			sourceTree = "<group>";
@@ -413,6 +416,7 @@
 			files = (
 				18FA850A26669B350047AA6E /* ListProductVC.swift in Sources */,
 				18FA850726669B350047AA6E /* ProductModel.swift in Sources */,
+				4DDC9F9726C634C6002419C0 /* FeatureModule.swift in Sources */,
 				18FA850926669B350047AA6E /* ListProductViewModel.swift in Sources */,
 				18FA850826669B350047AA6E /* ListProductServices.swift in Sources */,
 			);
