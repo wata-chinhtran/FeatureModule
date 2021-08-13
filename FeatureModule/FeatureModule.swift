@@ -9,7 +9,7 @@ import UIKit
 import CommonModule
 public class FeatureModule {
     public class func initWith(settings: [String: Any]?, token: String) -> UIViewController{
-        let productVC = ListProductVC()
+        let productVC = ProductDetailVC()
         if let services = settings?["services"] as? ListProductServices{
             productVC.viewModel = ListProductViewModelImpl(token: token, productServices: services)
         }

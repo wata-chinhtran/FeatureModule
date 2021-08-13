@@ -12,16 +12,16 @@ protocol ProductInfoDelegate: AnyObject {
 
 class ListProductVC: UIViewController {
 
-    public var viewModel: ListProductViewModel!
-    public var token: String!
-    public weak var delegate:ProductInfoDelegate!
+     var viewModel: ListProductViewModel!
+     var token: String!
+     weak var delegate:ProductInfoDelegate!
     
     var tbView:UITableView!
     
-    public func setToken(token: String) {
+     func setToken(token: String) {
         self.token = token
     }
-    public override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.title = "Products"
@@ -36,7 +36,7 @@ class ListProductVC: UIViewController {
         }
 
     }
-    public func fetchListProduct(completion:@escaping () -> Void){
+     func fetchListProduct(completion:@escaping () -> Void){
         viewModel.fetchListProduct { listProduct in
             completion()
         }
@@ -44,18 +44,18 @@ class ListProductVC: UIViewController {
 }
 extension ListProductVC: UITableViewDelegate, UITableViewDataSource {
  
-    public func numberOfSections(in tableView: UITableView) -> Int {
+     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.viewModel.listProduct.count
     }
-    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell")! as UITableViewCell
         cell.textLabel?.text = self.viewModel.listProduct[indexPath.row].name
         return cell
     }
-    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let delegate = self.delegate {
             delegate.productCallBack(title: self.viewModel.listProduct[indexPath.row].name ?? "")
             self.dismiss(animated: true, completion: nil)
