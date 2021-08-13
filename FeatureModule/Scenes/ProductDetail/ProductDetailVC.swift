@@ -13,18 +13,6 @@ class ProductDetailVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Product Detail"
-        
-//        if let path = Bundle.main.path(forResource: "FeatureModule", ofType: "bundle"), let bundle = Bundle.init(path: path){
-//            productImage.image = UIImage(named: "ip13.jpeg",
-//                                         in: bundle,
-//                                         compatibleWith: nil)
-//        }else{
-////            let fullPath = "\(featureModuleBundle.resourcePath ?? "")/ip13.jpeg"
-//            if #available(iOS 13.0, *) {
-//                productImage.image = UIImage(named: "ip13.jpeg", in: featureModuleBundle, with: nil)
-//            } else {
-//                // Fallback on earlier versions
-//            }
-//        }
+        productImage.image = UIImage(named: "ip13", in: featureModuleBundle, compatibleWith: nil)
     }
 }
