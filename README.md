@@ -36,7 +36,8 @@ How's to create project as lirary/framwork?
    spec.ios.deployment_target = "10.0"</br>
    spec.dependency "Moya" //optional</br>
   end</br>
-
+  
+ 5. Add resource bundle refer at: https://09mejohn.medium.com/resource-bundles-in-ios-static-library-beba3070fafd
 
 Getting Started with Swift Unit Testing in Xcode
 1. Adding a Unit Test Target to Your Xcode Project</br>
